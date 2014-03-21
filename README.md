@@ -32,4 +32,13 @@ urlpatterns = patterns('',
 
 ```
 
+- Static files
+
+Run collectstatic command or map static directory. If you use uWSGI you can map static files:
+
+```ini
+static-map = /static/inspectmodel/=%(path_to_site_packages)/inspectmodel/static/inspectmodel
+```
+
+
 To use the application you need to follow the link "http://myapplication_url/admin/inspect/browse/"
