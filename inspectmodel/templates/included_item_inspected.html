@@ -2,7 +2,7 @@
 {% load inspect_tags %}
 <li>
 	<div class="att_name">
-		{{f}} 
+		{{f}}
 		{% if model.model|inspect_source:f %}
 		<a class="att_source_button" data-text="{% trans "Hide source code" %}">{% trans "Show source code" %}</a>
 		{% endif %}
